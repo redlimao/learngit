@@ -3,3 +3,9 @@ git是分布式版本控制系统。
 分布式版本控制器，安全性高，每个人都有完整的版本库，每个人都可以进行修改，并且不会错乱。
 1.创建版本库
 先选定号文件夹，然后$git init,这是一个空的仓库empty Git repository
+2.版本退回
+$ git log命令显示从最近到最远的提交日志，
+$ git log --pretty=oneline更清爽的显示提交日志
+在Git中，HEAD表示当前版本，上一个版本是HEAD^，上上一个版本就是HEAD^^,版本多的话可以用数字来显示，HEAD-100
+$ git reset --hard HEAD^ 返回上一个版本
+如果在想改回去，也可以使用$ git reset --hard ec145d，但是必须知道commit的id，可以使用$ git reflog用来记录每一个命令
