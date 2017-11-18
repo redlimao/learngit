@@ -1,0 +1,7 @@
+工作区(Working Directory)
+    在电脑可以看到的目录，就是工作区。
+版本库（Repository）
+    版本库中最重要的是暂存区，git创建的第一个分支master，以及指向master的指针HEAD。
+将文件往git版本库里添加的时候，是分两步执行的：
+1、git add把文件添加进去，把文件修改添加到暂存区；
+2、git commit提交更改，把暂存区的所有内容提交到当前分支。
