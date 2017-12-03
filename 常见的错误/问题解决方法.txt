@@ -1,0 +1,14 @@
+git error: failed to push some refs to 'git@github.com:
+出现这个错误的原因是是 因为你有远程库中的文件没有下载下来。所以你需要先运行
+git pull origin master 
+然后你就看到了远程文件已经下载到你的工程里面并且自动合并了。
+然后你需要在本地库中添加新文件并且提交。
+然后你运行
+git push -u origin master.  
+
+Git 提示fatal: remote origin already exists 错误解决办法
+1、先删除远程 Git 仓库
+$ git remote rm origin
+2、再添加远程 Git 仓库
+$ git remote add origin git@github.com:FBing/java-code-generator
+如果执行 git remote rm origin 报错的话，我们可以手动修改gitconfig文件的内容
